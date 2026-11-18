@@ -7,7 +7,7 @@ on:
   workflow_dispatch:          # manual test from the Actions tab
   pull_request:
     paths:
-      - github/.Log_env_before_making_Agents.yml
+      - .github/Log_env_before_making_Agents.yml
 
 jobs:
   # The job MUST be named `copilot-setup-steps` or Copilot will not pick it up.
