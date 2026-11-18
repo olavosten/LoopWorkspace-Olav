@@ -1,4 +1,4 @@
-name: "Copilot Setup Steps"
+name: "Logger"
 
 # Prepares the environment for the Copilot coding agent in this fork.
 # Purpose: check out the git submodules so the agent can read the dosing code and tests.
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:          # manual test from the Actions tab
   pull_request:
     paths:
-      - ./.github/Log_env_before_making_Agents.yml
+      - ./.github/Logger.yml
 
 jobs:
   # The job MUST be named `copilot-setup-steps` or Copilot will not pick it up.
